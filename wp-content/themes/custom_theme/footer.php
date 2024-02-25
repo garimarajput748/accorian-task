@@ -103,19 +103,23 @@ $site_js_path = get_stylesheet_directory_uri() . "/"; /// . "/assets/js/";
 </div>
 <a href="#" class="back-to-top"><i class="flaticon-next"></i>
 </a>
-<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script>
+<script>
+    const SITE_ASSESTS_PATH = '<?php echo $site_assets_path; ?>';
+</script>
 <script src="<?php echo $site_assets_path; ?>assets/js/jquery.min.js"></script>
 <script src="<?php echo $site_assets_path; ?>assets/js/bootstrap.bundle.min.js"></script>
 <script src="<?php echo $site_assets_path; ?>assets/js/form-validator.min.js"></script>
 <script src="<?php echo $site_assets_path; ?>assets/js/contact-form-script.js"></script>
+<script src="<?php echo $site_assets_path; ?>assets/js/registration-form-script.js"></script>
 <script src="<?php echo $site_assets_path; ?>assets/js/aos.min.js"></script>
 <script src="<?php echo $site_assets_path; ?>assets/js/swiper-min.js"></script>
 <script src="<?php echo $site_assets_path; ?>assets/js/magnific-popup.min.js"></script>
 <script src="<?php echo $site_assets_path; ?>assets/js/fancybox.min.js"></script>
 <script src="<?php echo $site_assets_path; ?>assets/js/progressbar.min.js"></script>
 <script src="<?php echo $site_assets_path; ?>assets/js/main.js"></script>
+<?php
+    if(is_page("Webinar"))
+      echo '<script src="'.$site_assets_path.'assets/js/countdown.js"></script>';
+?>
 </body>
-
-<!-- Mirrored from accorian.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 Dec 2022 11:49:45 GMT -->
-
 </html>

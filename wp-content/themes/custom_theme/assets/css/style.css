@@ -4745,7 +4745,8 @@ h2.transparent-text span {
 }
 
 .service-card.style1 .service-info {
-	text-align: left
+	text-align: left;
+	min-height: 330px;
 }
 
 .service-card.style2 {

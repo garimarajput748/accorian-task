@@ -1,6 +1,6 @@
 (function($) {
     "use strict";
-    $("#contactForm").validator().on("submit", function(event) {
+    $("#registrationForm").validator().on("submit", function(event) {
         if (event.isDefaultPrevented()) {
             formError();
             submitMSG(false, "Did you fill in the form properly?");
@@ -11,16 +11,18 @@
     });
 
     function submitForm() {
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var phone_number = $("#phone_number").val();
+        
         // Create JSON object
         var formData = {
-            "name": $("#name").val(),
-            "email": $("#email").val(),
-            "phone_number": $("#phone_number").val(),
-            "subject":$("#msg_subject").val(),
-            "message":$("#message").val(),
-            "submit":"contactForm",
+            "name": name,
+            "email": email,
+            "phone_number": phone_number,
+            "submit":"registrationForm",
         };
-        
+
         $.ajax({
             type: "POST",
             url: SITE_ASSESTS_PATH+"assets/php/form-process.php",
@@ -37,12 +39,12 @@
     }
 
     function formSuccess() {
-        $("#contactForm")[0].reset();
+        $("#registrationForm")[0].reset();
         submitMSG(true, "Successfully Submitted!")
     }
 
     function formError() {
-        $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+        $("#registrationForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
             $(this).removeClass();
         });
     }

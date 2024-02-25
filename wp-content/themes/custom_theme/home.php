@@ -194,9 +194,9 @@ $site_js_path = get_stylesheet_directory_uri() . "/"; /// . "/assets/js/";
                         <div class="service-card style2">
                             <div class="service-info">
                                 <div class="service-icon">
-                                    <i class="flaticon-supply-chain-management"></i>
+                                    <i class="flaticon-24-hours-2"></i>
                                 </div>
-                                <h3 class="mt-20">Transparent & Scalable</h3>
+                                <h3 class="mt-20">24/7 Support</h3>
                             </div>
                         </div>
                     </div>
@@ -204,9 +204,9 @@ $site_js_path = get_stylesheet_directory_uri() . "/"; /// . "/assets/js/";
                         <div class="service-card style2">
                             <div class="service-info">
                                 <div class="service-icon">
-                                    <i class="flaticon-24-hours-2"></i>
+                                    <i class="flaticon-supply-chain-management"></i>
                                 </div>
-                                <h3 class="mt-20">24/7 Support</h3>
+                                <h3 class="mt-20">Scalable Solution</h3>
                             </div>
                         </div>
                     </div>
@@ -279,7 +279,7 @@ $site_js_path = get_stylesheet_directory_uri() . "/"; /// . "/assets/js/";
                                 <h3 class="service-title"><a href="#">RED TEAM ASSESSMENTS</a></h3>
 
                                 <p><strong>Boost your online presence with customised RED TEAM ASSESSMENTS strategies!</strong> Reach out to the people that matter! Our staff can assist you in developing a bespoke RED TEAM ASSESSMENTS plan for your company that is effective!</p>
-                                <a href="digital-marketing.html" class="link style1">Read More</a>
+                                <a href="#" class="link style1">Read More</a>
                             </div>
                         </div>
                     </div>
